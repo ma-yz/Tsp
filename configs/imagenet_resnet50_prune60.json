@@ -1,0 +1,43 @@
+{
+  "//": "parameters for TSP",
+  "pretrain_epochs": 10,
+  "//pretrain_epochs": "the epoch that start pruning",
+  "l1_coe": 0.0000012, 
+  "drop_rat1":0.3,
+  "drop_rat2":0.2,
+
+  "//": "paramters for SWAD",
+  "n_converge":3,
+  "n_tolerance":6,
+  "range":7, 
+  "swad_method": "LossValley", 
+  "tolerance_ratio":0.08,
+
+  "//": "General parameters",
+  "wd": 1e-4,
+  "lr_decay_every": 7, 
+  "lr_decay_scalar": 0.1, 
+  "method": 22,
+  "frequency" : 25,
+  "prune_per_iteration" : 100,
+  "maximum_pruning_iterations" : 48,
+  "starting_neuron" : 0,
+  "fixed_layer" : -1,
+  "l2_normalization_per_layer": false,
+  "rank_neurons_equally": false,
+  "prune_neurons_max": 4800,
+  "use_momentum": true,
+  "pruning_silent": false,
+
+  "pruning_threshold" : 100.0,
+  "start_pruning_after_n_iterations" : 0,
+  "push_group_down" : false,
+  "do_iterative_pruning" : true,
+  "fixed_criteria" : false,
+  "seed" : 0,
+  "pruning_momentum" : 0.9, 
+
+  "log_interval": 40,
+  "no_grad_clip": false,
+  "zero_lr_for_epochs": -1
+}
